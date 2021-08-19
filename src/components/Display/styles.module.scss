@@ -15,8 +15,9 @@
     justify-content: center;
 
     img{
-        width: 45%;
-        height: 65%;
+        width: 150px;
+        height: 150px;
+        position: absolute;
     }
 
     span{
@@ -26,7 +27,7 @@
         border-radius: 100%;
         position: relative;
         top: -88px;
-        left: 50px;
+        left: 0px;
     }
 
     div{
@@ -36,7 +37,7 @@
         border-radius: 100%;
         position: relative;
         top: -88px;
-        left: 60px;
+        left: 10px;
     }
 
 }

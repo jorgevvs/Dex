@@ -16,18 +16,18 @@
 .typesContainer{
     height: 50%;
     display: flexbox;
+
+    span{
+        color: white;
+        padding: 5px 2rem;
+        margin-top: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin-left: 3px;
+        display: inline-block;
+    }
 }
 
-.type{
-    color: white;
-    padding: 5px 2rem;
-    margin-top: 5px;
-    border-radius: 10px;
-    font-size: 15px;
-    margin-left: 3px;
-    display: inline-block;
-
-}
 
 .grass{
     background-color: #9BCC50;

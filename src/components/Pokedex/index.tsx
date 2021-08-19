@@ -7,15 +7,16 @@ import { Type } from '../Type';
 import styles from './styles.module.scss'
 
 export function Pokedex(){
-    function searchPokemon() {
-        const [input, setInput] = useState('');
+    const [input, setInput] = useState('');
+    const [poke, setPoke] = useState({})
+    
+    async function searchPokemon(pokemon: string) {
+        const dexSearch = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+        const dexPokemon = await dexSearch.json();
 
-        return (
-            <div>
-            <label>Please specify:</label>
-            <input value={input} onInput={e => setInput(e.target.value)}/>
-            </div>
-    );
+        setPoke(dexPokemon)
+
+        console.log(dexPokemon)
     }
 
     return(
@@ -24,16 +25,19 @@ export function Pokedex(){
                 <div className={styles.button}>
                 <span className={styles.bluebutton}></span>
                 </div>
-                <Display />
-                <Details />
+                <Display pokemon={poke} />
+                <Details pokemon={poke} />
             </div>
 
+            <div className={styles.middle}></div>
+
             <div className={styles.right}>
-                <input type="text" onSubmit={searchPokemon}/>
+                <input type="text" placeholder="ID or Name" onChange={e => setInput(e.target.value)}/>
+                <button onClick={() => searchPokemon(input)}>Search</button>
 
                 <Decoration />
 
-                <Type />
+                <Type pokemon={poke}/>
             </div>
         </div>
     );
