@@ -10,7 +10,7 @@ interface pokemon{
 }
 
 export function Type(props: pokemonTypes){
-    const [types, setTypes] = useState([<span key='0' className={styles.grass}>Grass</span>, <span  key='1' className={styles.poison}>Poison</span>])
+    const types = [<span key='0' className={styles.grass}>Grass</span>, <span  key='1' className={styles.poison}>Poison</span>]
 
     
     function newTypes(){
@@ -26,7 +26,7 @@ export function Type(props: pokemonTypes){
     }
 
     function createTypes(){
-        let array = props.pokemon.types ? newTypes() : types
+        let array = props.pokemon.types[1] ? newTypes() : types
         return array
     }
 

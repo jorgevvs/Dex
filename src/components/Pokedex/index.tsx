@@ -14,8 +14,16 @@ interface pokemonType{
 
 
 export function Pokedex(){
+    const ability = { name: "overgrow"};
     const [input, setInput] = useState('');
-    const [poke, setPoke] = useState({})
+    const [poke, setPoke] = useState({
+        id: 1,
+        name: "BULBASAUR",
+        weight: 69,
+        abilities: [ability],
+        stats: [{base_stat: 45}, {base_stat: 49}, {base_stat: 49}],
+        types: []
+    })
     
     async function searchPokemon(pokemon: string) {
         const dexSearch = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
