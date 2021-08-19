@@ -6,6 +6,13 @@ import { Display } from '../Display';
 import { Type } from '../Type';
 import styles from './styles.module.scss'
 
+interface pokemonType{
+    weight: number
+    id: number
+    name: string
+}
+
+
 export function Pokedex(){
     const [input, setInput] = useState('');
     const [poke, setPoke] = useState({})

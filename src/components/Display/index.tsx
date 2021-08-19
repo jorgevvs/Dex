@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { PokemonProvider } from '../../contexts/PokemonContext';
 import styles from './styles.module.scss'
 
 interface pokemonProps{
