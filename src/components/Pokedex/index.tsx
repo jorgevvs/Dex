@@ -6,12 +6,6 @@ import { Display } from '../Display';
 import { Type } from '../Type';
 import styles from './styles.module.scss'
 
-interface pokemonType{
-    weight: number
-    id: number
-    name: string
-}
-
 
 export function Pokedex(){
     const ability = { name: "overgrow"};
@@ -28,9 +22,7 @@ export function Pokedex(){
     async function searchPokemon(pokemon: string) {
         const dexSearch = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
         const dexPokemon = await dexSearch.json();
-
         setPoke(dexPokemon)
-
         console.log(dexPokemon)
     }
 

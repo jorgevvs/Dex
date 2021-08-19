@@ -26,7 +26,7 @@ export function Type(props: pokemonTypes){
     }
 
     function createTypes(){
-        let array = props.pokemon.types[1] ? newTypes() : types
+        let array = props.pokemon.types[0] ? newTypes() : types
         return array
     }
 
