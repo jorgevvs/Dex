@@ -1,5 +1,5 @@
 # <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png" width="20px"> Dex <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png" width="20px">
-<img src="https://cdn.discordapp.com/attachments/818623973704073260/878076655682355250/vokoscreenNG-2021-08-19_21-41-02.gif">
+<img src="https://cdn.discordapp.com/attachments/818623973704073260/878093883530170408/dex.gif">
 
 <h3> <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png" width="13px"> Link:<a href="https://jorgevvs-dex.netlify.app/" >https://jorgevvs-dex.netlify.app/ </a><img src="https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png" width="13px"> </h3>
 
