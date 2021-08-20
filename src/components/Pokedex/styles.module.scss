@@ -97,3 +97,148 @@
     left: 48%;
     top: 0;
 }
+
+.id{
+    width: 50px;
+    position: absolute;
+    bottom: 35.5%;
+    left: 10%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px black ;
+    background-color: green;
+}
+
+.control{
+    position: absolute;
+    bottom: 12%;
+    right: 55%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100px;
+
+    height: 100px;
+
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navButton{
+    position: relative;
+    background-color: black;
+    height: 33%;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.blank{
+    background: none;
+    border: none;
+}
+
+.leftTriangle {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    border-left: solid 10px transparent; 
+    border-right: solid 10px transparent; 
+    border-bottom: solid 15px #777;
+    transform: rotate(-90deg);
+  }
+
+.centerCircle {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+
+}   
+
+.rightTriangle {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    border-left: solid 10px transparent; 
+    border-right: solid 10px transparent; 
+    border-bottom: solid 15px #777;
+    transform: rotate(90deg);
+}
+
+.downTriangle {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    border-left: solid 10px transparent; 
+    border-right: solid 10px transparent; 
+    border-bottom: solid 15px #777;
+    transform: rotate(180deg);
+}
+
+.upTriangle {
+    position: absolute;
+    bottom: 7px;
+    left: 4px;
+    border-left: solid 10px transparent; 
+    border-right: solid 10px transparent; 
+    border-bottom: solid 15px #777;
+}
+
+.blueDeco{
+    width: 50px;
+    height: 5px;
+    background-color: blue;
+
+    border: solid .5px black;
+
+    border-radius: 2px;
+
+    bottom: 37%;
+
+    right: 67%;
+
+    position: absolute;
+
+    div{
+        cursor: pointer;
+        background-color: rgb(17, 17, 17);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+
+        box-shadow: 1px 1px 1px black;
+
+        position: relative;
+        top: -14px;
+        left: 120px;
+    }
+}
+
+.redDeco{
+    width: 50px;
+    height: 5px;
+    background-color: red;
+
+    border: solid .1px black;
+
+
+    border-radius: 2px;
+
+    bottom: 37%;
+    left: 20%;
+
+    position: absolute;
+}
+
+.circle{
+    position: relative;
+    background-color: #777;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    left: 25%;
+}

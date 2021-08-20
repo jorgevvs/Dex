@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import styles from './styles.module.scss'
 
 interface pokemonTypes{
@@ -19,7 +19,7 @@ export function Type(props: pokemonTypes){
             const typeName = props.pokemon.types[i].type.name
             const classNames = typeName
             array.push(
-                <span key={i} className={classNames}>{typeName}</span>
+                <span key={i} className={classNames}>{typeName.charAt(0).toUpperCase() + typeName.slice(1)}</span>
             )
         }
         return array

@@ -24,7 +24,7 @@ export function Display(props: pokemonProps){
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${img}.png`} alt="" />
             </div>
 
-            <span className={styles.name}>{props.pokemon.name ? props.pokemon.name.toUpperCase() : 'BULBASAUR'}</span>
+            <span className={styles.name}>{props.pokemon.name ? (props.pokemon.name.charAt(0).toUpperCase() + props.pokemon.name.slice(1)) : 'Bulbasaur'}</span>
         </div>
     );
 }
