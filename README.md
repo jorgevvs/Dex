@@ -41,19 +41,8 @@ yarn install
 yarn add -D typescript @types/react @types/node
 ```
 
-## **Criando um projeto Next.js:**
-
+## **Iniciando o projeto**
 ```
-yarn create next-app .
-
-yarn dev
-```
-
-## **Criando uma build do projeto:**
-
-```
-yarn build
-
 yarn start
 ```
 
