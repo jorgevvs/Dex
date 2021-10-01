@@ -15,3 +15,45 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" width="90px">
 </div>
 
+## **Instalando o node.js:**
+
+https://github.com/nodesource/distributions/blob/master/README.md
+
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+```
+
+## **Para instalar o Yarn:**
+```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update
+sudo apt-get install --no-install-recommends yarn
+
+yarn install
+```
+
+## **Para instalar o Typescript:**
+```
+yarn add -D typescript @types/react @types/node
+```
+
+## **Criando um projeto Next.js:**
+
+```
+yarn create next-app .
+
+yarn dev
+```
+
+## **Criando uma build do projeto:**
+
+```
+yarn build
+
+yarn start
+```
+
