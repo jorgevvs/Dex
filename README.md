@@ -43,6 +43,6 @@ yarn add -D typescript @types/react @types/node
 
 ## **Iniciando o projeto**
 ```
-yarn start
+yarn dev
 ```
 
