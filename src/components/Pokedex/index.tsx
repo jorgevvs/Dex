@@ -41,13 +41,33 @@ export function Pokedex(){
 
                 <div className={styles.control}>
                     <button className={`${styles.navButton} ${styles.blank}`}></button>
-                    <button className={styles.navButton}><span className={styles.upTriangle} onClick={() => searchPokemon((poke.id + 10).toString())}></span></button>
+
+                    <button className={styles.navButton}>
+                        <span className={styles.upTriangle} onClick={() => searchPokemon((poke.id + 10).toString())}></span>
+                    </button>
+
                     <button className={`${styles.navButton} ${styles.blank}`}></button>
-                    <button className={styles.navButton}> <span className={styles.leftTriangle} onClick={() => searchPokemon((poke.id - 1).toString())}></span></button>
-                    <button className={styles.navButton}><span className={styles.centerCircle}><div className={styles.circle}></div></span></button>
-                    <button className={styles.navButton}><span className={styles.rightTriangle} onClick={()=> searchPokemon((poke.id + 1).toString())}></span></button>
+
+                    <button className={styles.navButton}> 
+                        <span className={styles.leftTriangle} onClick={() => searchPokemon((poke.id - 1).toString())}></span>
+                    </button>
+
+                    <button className={styles.navButton}>
+                        <span className={styles.centerCircle}>
+                            <div className={styles.circle}></div>
+                        </span>
+                    </button>
+
+                    <button className={styles.navButton}>
+                        <span className={styles.rightTriangle} onClick={()=> searchPokemon((poke.id + 1).toString())}></span>
+                    </button>
+
                     <button className={`${styles.navButton} ${styles.blank}`}></button>
-                    <button className={styles.navButton}> <span className={styles.downTriangle} onClick={() => searchPokemon((poke.id - 10).toString())}></span></button>
+
+                    <button className={styles.navButton}> 
+                        <span className={styles.downTriangle} onClick={() => searchPokemon((poke.id - 10).toString())}></span>
+                    </button>
+
                     <button className={`${styles.navButton} ${styles.blank}`}></button>
                 </div>
             </div>
@@ -55,7 +75,7 @@ export function Pokedex(){
             <div className={styles.middle}></div>
 
             <div className={styles.right}>
-                <input type="text" placeholder="ID or Name" onChange={e => setInput(e.target.value)}/>
+                <input type="text" placeholder="Name or ID (1 to 898)" onChange={e => setInput(e.target.value)}/>
                 <button onClick={() => searchPokemon(input.toLowerCase())}>Search</button>
 
                 <Decoration />

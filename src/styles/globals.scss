@@ -19,14 +19,17 @@ body {
 
 .grass{
   background-color: #9BCC50;
+  color: black;
 }
 
 .poison{
   background-color: purple;
+  color: white;
 }
 
 .fire{
   background-color: orangered;
+  color: white;
 }
 
 .psychic{
@@ -40,6 +43,7 @@ body {
 
 .flying{
   background: linear-gradient(180deg, rgba(26,156,171,1) 0%, rgba(98,98,98,1) 71%);
+  color: white;
 }
 
 .fighting{
@@ -68,6 +72,7 @@ body {
 
 .bug{
   background-color: rgb(114,159,63);
+  color: white;
 }
 
 .dark{
@@ -76,6 +81,7 @@ body {
 
 .ground{
   background: linear-gradient(180deg, rgb(247,222,63) 0%, rgb(171,152,66) 71%);
+  
 } 
 
 .steel{
@@ -88,4 +94,5 @@ body {
 
 .water{
   background-color: rgb(69,146,196);
+  color: white;
 }

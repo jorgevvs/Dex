@@ -134,11 +134,13 @@
     width: 33%;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .blank{
     background: none;
     border: none;
+    cursor:default;
 }
 
 .leftTriangle {
@@ -203,7 +205,6 @@
     position: absolute;
 
     div{
-        cursor: pointer;
         background-color: rgb(17, 17, 17);
         width: 35px;
         height: 35px;
